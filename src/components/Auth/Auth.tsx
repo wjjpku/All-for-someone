@@ -5,7 +5,7 @@ import { CONFIG } from '../../config';
 import type { AppConfig } from '../../config';
 
 export const Auth: React.FC = () => {
-    const { isAuthenticated, loginToday } = useAppStore();
+    const { isAuthenticated, login } = useAppStore();
     const [inputVal, setInputVal] = useState('');
     const [error, setError] = useState(false);
     const [isVisible, setIsVisible] = useState(!isAuthenticated);
@@ -17,7 +17,7 @@ export const Auth: React.FC = () => {
         const hashes = config.auth.passwordHashes || [];
         if (hashes.length === 0 && !isAuthenticated) {
             setIsVisible(false);
-            loginToday();
+            login();
             return;
         }
         if (!isAuthenticated && inputRef.current) {

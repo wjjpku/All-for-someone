@@ -180,7 +180,7 @@ export const Gate: React.FC = () => {
             <img 
                 ref={dogRef}
                 id="tricky-dog" 
-                src={config.ui.gate.dogImage} 
+                src={CONFIG.ui.gate.dogImage} 
                 alt="dog"
                 className="absolute w-[120px] h-[120px] object-cover rounded-full border-[6px] border-white shadow-2xl select-none pointer-events-none will-change-transform"
                 onLoad={() => {
@@ -213,7 +213,7 @@ export const Gate: React.FC = () => {
             {/* Custom Cursor */}
             <img 
                 ref={cursorRef}
-                src={config.ui.gate.cursorImage} 
+                src={CONFIG.ui.gate.cursorImage} 
                 className="fixed w-20 h-20 pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-white shadow-lg bg-yellow-100 object-cover p-2"
                 style={{ display: 'none' }} 
                 onLoad={(e) => (e.currentTarget.style.display = 'block')}
