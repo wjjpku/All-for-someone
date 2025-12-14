@@ -1,0 +1,8 @@
+.vercelignore note: allow dist for static deploy
+node_modules
+build
+# dist
+.git
+.trae
+.log
+.figma
