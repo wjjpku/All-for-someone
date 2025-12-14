@@ -32,8 +32,8 @@ export const UI_CONFIG = {
     // 门禁页 (Gate)
     gate: {
         mainText: "Catch Me!",
-        subText: "用这块银牌敲敲生气的 YRC ~",
-        skipButton: "认输，我抓不到 YRC (｡•́︿•̀｡)",
+        subText: "敲敲可爱的 xxx ~",
+        skipButton: "认输，我抓不到 xxx (｡•́︿•̀｡)",
         skipDelay: 10000, // 多少毫秒后显示跳过按钮
         dogImage: "https://picsum.photos/seed/dog/200/200",
         cursorImage: "https://picsum.photos/seed/cursor/200/200"
